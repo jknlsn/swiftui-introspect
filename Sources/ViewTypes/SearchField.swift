@@ -76,8 +76,11 @@ extension iOSViewVersion<SearchFieldType, UISearchBar> {
     @available(*, unavailable, message: ".searchable isn't available on iOS 14")
     public static let v14 = Self.unavailable()
     public static let v15 = Self(for: .v15, selector: selector)
+    @MainActor
     public static let v16 = Self(for: .v16, selector: selector)
+    @MainActor
     public static let v17 = Self(for: .v17, selector: selector)
+    @MainActor
     public static let v18 = Self(for: .v18, selector: selector)
 
     private static var selector: IntrospectionSelector<UISearchBar> {
